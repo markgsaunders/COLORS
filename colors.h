@@ -3,7 +3,7 @@
 
 typedef enum
 {
-  RED     = 0CY_RGB_LED_COLOR_RED,
+  RED     = CY_RGB_LED_COLOR_RED,
   GREEN   = CY_RGB_LED_COLOR_GREEN,
   BLUE    = CY_RGB_LED_COLOR_BLUE,
   YELLOW  = CY_RGB_LED_COLOR_RED|CY_RGB_LED_COLOR_GREEN,
@@ -12,3 +12,7 @@ typedef enum
   WHITE   = CY_RGB_LED_COLOR_RED|CY_RGB_LED_COLOR_GREEN|CY_RGB_LED_COLOR_BLUE,
   BLACK   = (~WHITE)&WHITE
 } color_t;
+
+void init_colors( void );
+void color( color_t color );
+
